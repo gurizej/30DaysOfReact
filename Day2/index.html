@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+        rel="stylesheet"
+        />
+
+        <title>30 Days Of React Challenge</title>
+
+        <style>
+            html,
+            body {
+                height: 100%;
+                line-height: 1.5;
+                font-family: 'Montserrat';
+                font-weight: 300;
+                color: black;
+            }
+            .root {
+                min-height: 100%;
+                position: relative;
+            }
+            .main-wrapper,
+            .footer-wrapper {
+                width: 100%;
+                margin: auto;
+                text-align: center;
+            }
+            .main-wrapper {
+                padding: 10px;
+                margin: 2px auto;
+            }
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 60px;
+                /* Height of the footer */
+                background: rgb(220, 235, 20);
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="root"></div>
+
+        <script
+        crossorigin
+        src="https://unpkg.com/react@16/umd/react.development.js"
+        ></script>
+        <script
+        crossorigin
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+        ></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            // To get the root element from the HTML document
+            const rootElement = document.querySelector('.root')
+
+            const myName = "Guri Zejnullahi"
+
+            const myInfo = (
+                <main>
+                    <div className="div-wwrapper">
+                        <h1>{myName}</h1>
+                        <p>Country: USA</p>
+                        <p>Title: Software Engineer</p>
+                        <p>Gender: M</p>
+                        <p>Email: myEmail@myEmail.com</p>
+                        <p>Phone Number: 123-123-1234</p>
+                    </div>
+                </main>
+            )
+
+            const footer = (
+                <footer>
+                    <div>
+                        Copyright 2021
+                    </div>
+                </footer>
+            )
+
+            const app = (
+                <div className="footer-wrapper">
+                    {myInfo}
+                    {footer}
+                </div>
+            )
+
+            ReactDOM.render(app, rootElement)
+        </script>
+    </body>
+</html>
