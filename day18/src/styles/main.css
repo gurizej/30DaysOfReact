@@ -1,0 +1,45 @@
+.catHeader {
+  text-align: center;
+  background-color: rgba(179, 166, 238, 0.5);
+  padding: 10px;
+}
+
+.catsWrapper {
+  justify-content: center;
+} 
+
+.catCard {
+  border-style: outset;
+  /* border-style: inset; */
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.catCardInfoPart {
+  padding: 20px;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  height: 900px;
+}
+
+.selectedCountryContainer{
+  justify-content: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: khaki;
+}
+
+.selectedCountry {
+  width: fit-content;
+  padding: 5px;
+  border-style: groove;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
