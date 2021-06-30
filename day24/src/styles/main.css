@@ -1,0 +1,66 @@
+.footer { 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: khaki;
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: khaki;
+    text-align: center;
+}
+
+.countryCard {
+    border-style: inset;
+    width: 22%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    float: left;
+    height: 400px;
+}
+
+img {
+    height: 150px;
+    width: 250px;
+    padding: 20px;
+}
+
+.countryName {
+    color: orangered;
+}
+
+.countriesWrapper {
+    justify-content: center;
+}
+
+.popLangs {
+    background-color: blueviolet;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.top10Pops {
+    background-color: peachpuff;
+}
+
+.top10Langs {
+    background-color: lawngreen;
+}
+
+button {
+    background-color: orange;
+}
