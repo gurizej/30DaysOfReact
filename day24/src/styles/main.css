@@ -64,3 +64,12 @@ img {
 button {
     background-color: orange;
 }
+
+.top10 {
+    margin-left: 50%;
+}
+
+.searcher {
+    margin-left: 35%;
+    width: 30%;
+}

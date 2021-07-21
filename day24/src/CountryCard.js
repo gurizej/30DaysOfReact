@@ -24,7 +24,6 @@ class CountryCard extends React.Component {
     }
     render() {
         if(this.state.searchWord === '') {
-            // return everything
             return (
                 <div className='countryCard'>
                     <img src={this.state.countryData.flag} alt={this.state.countryData.name} />
@@ -36,8 +35,21 @@ class CountryCard extends React.Component {
                 </div>
             )
         } else {
-            //return only the matches
-            //return null on no matches
+            // if(this.state.countryData.name === (this.state.searchWord)){
+            if(this.state.countryData.name.toLowerCase().includes(this.state.searchWord.toLowerCase())){
+                return (
+                    <div className='countryCard'>
+                        <img src={this.state.countryData.flag} alt={this.state.countryData.name} />
+                        <h3 className='countryName'>{this.state.countryData.name}</h3>
+                        <h3><b>Capital: </b>{this.state.countryData.capital}</h3>
+                        {/* <h3><b>Language: </b>{this.state.countryData.languages}</h3> */}
+                        <h3><b>Population: </b>{this.beautifyPopulation(this.state.countryData.population)}</h3>
+                        {/* <h3><b>Currency: </b>{this.state.countryData.currencies}</h3> */}
+                    </div>
+                )
+            }else {
+                return(null)
+            }
         }
         
     }
