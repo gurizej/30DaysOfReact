@@ -1,0 +1,41 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: khaki;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.cellBox {
+    height: 100px;
+    width: 100px;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    margin: 2px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.myTable{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+span{
+    margin-top: auto;
+}
+
+p{
+text-align: center;
+}
+
+button{
+    margin-left:45%;
+    width: 10%;
+}
